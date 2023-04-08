@@ -1,4 +1,4 @@
-﻿using IT3047C_FinalProject.Models;
+﻿using IT3047C_FinalProject.Models.DataLayer;
 using Microsoft.EntityFrameworkCore;
 
 namespace IT3047C_FinalProject
