@@ -9,7 +9,7 @@ namespace IT3047C_FinalProject.Models
         [Display(Name ="Hobby Name")]
         public string HobbyName { get; set; }
 
-        [Display(Name = "Favorite Types")]
+        [Display(Name = "Favorite Type(s) of the Hobby")]
         public string HobdyType { get; set; }
     }
 }
