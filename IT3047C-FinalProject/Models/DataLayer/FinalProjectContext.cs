@@ -7,5 +7,7 @@ namespace IT3047C_FinalProject.Models.DataLayer
         public FinalProjectContext(DbContextOptions<FinalProjectContext> options)
             : base(options)
         { }
+
+        public DbSet<Chloe> chloes { get; set; }
     }
 }
