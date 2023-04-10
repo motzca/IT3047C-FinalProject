@@ -9,5 +9,6 @@ namespace IT3047C_FinalProject.Models.DataLayer
         { }
 
         public DbSet<Chloe> Chloe { get; set; }
+        public DbSet<Shared> SharedHobbies { get; set; }
     }
 }
