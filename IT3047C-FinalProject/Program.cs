@@ -1,7 +1,14 @@
+using Microsoft.EntityFrameworkCore;
+using IT3047C_FinalProject.Models;
+using IT3047C_FinalProject.Models.DataLayer;
+using Microsoft.Extensions.Configuration;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<FinalProjectContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("FinalProjectContext")));
 
 var app = builder.Build();
 

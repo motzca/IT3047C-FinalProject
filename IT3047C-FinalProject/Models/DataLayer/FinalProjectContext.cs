@@ -8,6 +8,6 @@ namespace IT3047C_FinalProject.Models.DataLayer
             : base(options)
         { }
 
-        public DbSet<Chloe> chloes { get; set; }
+        public DbSet<Chloe> Chloe { get; set; }
     }
 }
