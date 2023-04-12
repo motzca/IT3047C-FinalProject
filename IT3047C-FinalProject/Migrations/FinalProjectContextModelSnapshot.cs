@@ -33,7 +33,7 @@ namespace IT3047C_FinalProject.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HobdyType")
+                    b.Property<string>("HobbyType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

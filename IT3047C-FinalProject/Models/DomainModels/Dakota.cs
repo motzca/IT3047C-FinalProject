@@ -2,7 +2,7 @@
 
 namespace IT3047C_FinalProject.Models
 {
-    public class Chloe
+    public class Dakota
     {
         [Key]
         public int HobbyId { get; set; } //primary key
