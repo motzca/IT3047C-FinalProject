@@ -15,7 +15,7 @@ namespace IT3047C_FinalProject.Migrations
                     HobbyId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     HobbyName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    HobdyType = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    HobbyType = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
