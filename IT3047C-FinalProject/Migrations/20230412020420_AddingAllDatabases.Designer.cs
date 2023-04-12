@@ -3,6 +3,7 @@ using IT3047C_FinalProject.Models.DataLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IT3047C_FinalProject.Migrations
 {
     [DbContext(typeof(FinalProjectContext))]
-    partial class FinalProjectContextModelSnapshot : ModelSnapshot
+    [Migration("20230412020420_AddingAllDatabases")]
+    partial class AddingAllDatabases
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,27 +42,6 @@ namespace IT3047C_FinalProject.Migrations
                     b.HasKey("HobbyId");
 
                     b.ToTable("Chloe");
-                });
-
-            modelBuilder.Entity("IT3047C_FinalProject.Models.Dakota", b =>
-                {
-                    b.Property<int>("HobbyId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("HobbyId"), 1L, 1);
-
-                    b.Property<string>("HobbyName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("HobbyType")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("HobbyId");
-
-                    b.ToTable("Dakotas");
                 });
 
             modelBuilder.Entity("IT3047C_FinalProject.Models.Shared", b =>

@@ -8,7 +8,8 @@ namespace IT3047C_FinalProject.Models
         public void Configure(EntityTypeBuilder<Shared> entity)
         {
             entity.HasData(
-                new Shared { SharedHobbyId = 1, SharedHobbyName = "Test" }
+                new Shared { SharedHobbyId = 1, SharedHobbyName = "Gaming" },
+                new Shared { SharedHobbyId = 2, SharedHobbyName = "Building" }
                 );
         }
     }
