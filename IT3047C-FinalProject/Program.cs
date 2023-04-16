@@ -1,6 +1,5 @@
 using Microsoft.EntityFrameworkCore;
 using IT3047C_FinalProject.Models;
-using IT3047C_FinalProject.Models.DataLayer;
 using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
