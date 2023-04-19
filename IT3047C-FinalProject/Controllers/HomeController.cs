@@ -1,4 +1,4 @@
-﻿using IT3047C_FinalProject.Models.DataLayer;
+﻿using IT3047C_FinalProject.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IT3047C_FinalProject.Controllers

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace IT3047C_FinalProject.Migrations
 {
     [DbContext(typeof(FinalProjectContext))]
-    [Migration("20230410144821_ChloeInitial")]
-    partial class ChloeInitial
+    [Migration("20230412020420_AddingAllDatabases")]
+    partial class AddingAllDatabases
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -35,13 +35,30 @@ namespace IT3047C_FinalProject.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("HobdyType")
+                    b.Property<string>("HobbyType")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("HobbyId");
 
                     b.ToTable("Chloe");
+                });
+
+            modelBuilder.Entity("IT3047C_FinalProject.Models.Shared", b =>
+                {
+                    b.Property<int>("SharedHobbyId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SharedHobbyId"), 1L, 1);
+
+                    b.Property<string>("SharedHobbyName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("SharedHobbyId");
+
+                    b.ToTable("SharedHobbies");
                 });
 #pragma warning restore 612, 618
         }
