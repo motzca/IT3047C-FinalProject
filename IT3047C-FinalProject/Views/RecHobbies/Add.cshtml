@@ -1,0 +1,29 @@
+﻿@model RecHobbies
+
+@{
+    ViewData["Title"] = "Add Recommendation";
+}
+
+<h1 class="display-4"> Add Recomendation</h1>
+
+<form asp-action="Add" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="hobbyType" class="form-label"></label>
+        <input asp-for="hobbyType" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="recommendedHobby" class="form-label"></label>
+        <input asp-for="recommendedHobby" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label asp-for="userName" class="form-label"></label>
+        <input asp-for="userName" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-dark">Save</button>
+    <a asp-action="Index" asp-controller="RecHobbies" class="btn btn-outline-dark">Cancel</a>
+</form>
