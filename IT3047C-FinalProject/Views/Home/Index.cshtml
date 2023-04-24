@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
 <html>
     <head>
         <meta name="viewport" content="width=device-width" />
@@ -19,7 +23,7 @@
         <p class="title">CEO & Founder</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p><a class="button" asp-area="" asp-action="AboutChloe">Contact</a></p>
       </div>
     </div>
   </div>
@@ -31,7 +35,9 @@
         <p class="title">Art Director</p>
         <p>Some text that describes me lorem ipsum ipsum lorem.</p>
         <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
+        <p>
+         <a class="button" asp-area="" asp-action="AboutDakota">Contact</a>
+        </p>
       </div>
     </div>
   </div>

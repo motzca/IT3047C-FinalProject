@@ -12,5 +12,35 @@ namespace IT3047C_FinalProject.Controllers
             ViewBag.Name = "temp";
             return View();
         }
+        public IActionResult AboutChloe()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/AboutUs/AboutChloe.cshtml");
+        }
+        public IActionResult AboutDakota()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/AboutUs/AboutDakota.cshtml");
+        }
+        public IActionResult ChloesHobbies()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/Hobbies/ChloesHobbies.cshtml");
+        }
+        public IActionResult DakotasHobbies()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/Hobbies/DakotasHobbies.cshtml");
+        }
+        public IActionResult Recommendations()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/Hobbies/Recommendations.cshtml");
+        }
+        public IActionResult SharedHobbies()
+        {
+            ViewBag.Name = "temp";
+            return View("~/Views/Hobbies/SharedHobbies.cshtml");
+        }
     }
 }
