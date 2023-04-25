@@ -1,0 +1,40 @@
+﻿@model IEnumerable<RecHobbies>
+
+@{
+    ViewData["Title"] = "Reccommended Hobbies";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Recommend Us Hobbies!</h1>
+</div>
+
+<a asp-action="Add" class="ms-2">Add Hobby</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Who the recommendation is for</th>
+            <th>Hobby type</th>
+            <th>Recommendations</th>
+            <th>Recommended by</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+                @foreach (RecHobbies recHobbies in Model)
+                {
+            <tr>
+                <td>@recHobbies.Name</td>
+                <td>@recHobbies.hobbyType</td>
+                <td>@recHobbies.recommendedHobby</td>
+                <td>@recHobbies.userName</td>
+                <td>
+                    <a asp-action="Delete" asp-route-id="@recHobbies.Id"
+                   class="btn btn-outline-dark">Delete</a>
+                </td>
+            </tr>
+                }
+    </tbody>
+</table>
+
+
