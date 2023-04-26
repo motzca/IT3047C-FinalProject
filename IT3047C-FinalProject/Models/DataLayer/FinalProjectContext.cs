@@ -8,9 +8,9 @@ namespace IT3047C_FinalProject.Models
             : base(options)
         { }
 
-        public DbSet<Chloe> Chloe { get; set; }
-        public DbSet<Shared> SharedHobbies { get; set; }
-        public DbSet<Dakota> Dakotas { get; set; }
+        public DbSet<Chloe> Chloe { get; set; } = null!;
+        public DbSet<Shared> SharedHobbies { get; set; } = null!;
+        public DbSet<Dakota> Dakotas { get; set; } = null!;
         public DbSet<RecHobbies> RecHobbies { get; set; } = null!;
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

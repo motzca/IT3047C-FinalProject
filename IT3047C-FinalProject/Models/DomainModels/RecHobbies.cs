@@ -13,11 +13,11 @@ namespace IT3047C_FinalProject.Models
 
         [Display(Name = "Type of Hobby")]
         [Required(ErrorMessage = "Please enter in the hobby type.")]
-        public string hobbyType { get; set; }
+        public string hobbyType { get; set; } = null!;
 
         [Display(Name = "Recommendation")]
         [Required(ErrorMessage = "Please enter in your recommendation.")]
-        public string recommendedHobby { get; set; }
+        public string recommendedHobby { get; set; } = null!;
 
         [Display(Name = "Recommended by")]
         public string? userName { get; set; }

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace IT3047C_FinalProject.Models
 {
-    public class DakotaConfig : IEntityTypeConfiguration<Dakota>
+    internal class DakotaConfig : IEntityTypeConfiguration<Dakota>
     {
         public void Configure(EntityTypeBuilder<Dakota> entity)
         {

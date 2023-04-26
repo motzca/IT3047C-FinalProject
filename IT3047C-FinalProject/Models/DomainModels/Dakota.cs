@@ -8,9 +8,9 @@ namespace IT3047C_FinalProject.Models
         public int HobbyId { get; set; } //primary key
 
         [Display(Name ="Hobby Name")]
-        public string HobbyName { get; set; }
+        public string HobbyName { get; set; } = null!;
 
         [Display(Name = "Favorite Type(s) of the Hobby")]
-        public string HobbyType { get; set; }
+        public string HobbyType { get; set; } = null!;
     }
 }

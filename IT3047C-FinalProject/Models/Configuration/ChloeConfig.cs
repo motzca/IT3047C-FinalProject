@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace IT3047C_FinalProject.Models
 {
-    public class ChloeConfig : IEntityTypeConfiguration<Chloe>
+    internal class ChloeConfig : IEntityTypeConfiguration<Chloe>
     {
         public void Configure(EntityTypeBuilder<Chloe> entity)
         {
