@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<Dakota>
 
 @{
-    ViewData["Title"] = "Dakota's Hobbies";
+     ViewData["Title"] = "Dakota's Hobbies";
 }
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title> @ViewData </title>
+        <title> Dakota's Hobbies' </title>
     </head>
     <body>
         <h1 class="display-4"> Favorite Hobbies</h1>
@@ -17,7 +17,7 @@
             <tr><th>Hobby Name</th><th>Favorite Types of Hobby</th></tr>
         </thead>
         <tbody>
-            @foreach (Dakota c in Model)
+            @foreach (Dakota c! in Model)
             {
                 <tr>
                     <td>@c.HobbyName</td>
