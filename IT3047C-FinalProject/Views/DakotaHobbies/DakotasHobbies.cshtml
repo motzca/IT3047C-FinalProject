@@ -1,40 +1,27 @@
 ﻿@model IEnumerable<Dakota>
 
 @{
-     ViewData["Title"] = "Dakota's Hobbies";
+    ViewData["Title"] = "Dakota's Hobbies";
 }
 
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Dakota's Hobbies' </title>
-    </head>
-    <body>
-        <h1 class="display-4"> Favorite Hobbies</h1>
-
-    <table class="table">
-        <thead>
-            <tr><th>Hobby Name</th><th>Favorite Types of Hobby</th></tr>
-        </thead>
-        <tbody>
-            @foreach (Dakota c! in Model)
-            {
-                <tr>
-                    <td>@c.HobbyName</td>
-                    <td>@c.HobbyType</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+<head>
+    <title> Dakota's Hobbies' </title>
+</head>
+<body>
+    <h1 class="display-4"> Favorite Hobbies</h1>
 
     <h3><b></b>Hiking</h3>
-    <p> One of my favorite things to do when I get the time is to go on a short hike. I haven't went on long backpacking trips
+    <p>
+        One of my favorite things to do when I get the time is to go on a short hike. I haven't went on long backpacking trips
         yet, but the shorter few mile hikes through the woods are relaxing to me. I also enjoy some traditonal camping trips
         with friends and family.
     </p>
 
     <h3><br /><b>Swimming</b></h3>
-    <p> When I was in high school, I joined the swim team. At joined during my sophmore year and stoped after I graduated.
+    <p>
+        When I was in high school, I joined the swim team. At joined during my sophmore year and stoped after I graduated.
         I would do some lap swimming every weekday after school with the rest of the team, and go to swim events for some
         competition swimming. My favorite strokes were freestyle and breaststroke.
     </p>
@@ -45,5 +32,5 @@
         rod fishing though. I would go over to my grandparents' river whenever I visted as a kid, and I still enjoy going out
         to a pond for a relaxing evening. '
     </p>
-    </body>
+</body>
 </html>
