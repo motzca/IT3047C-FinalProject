@@ -40,7 +40,7 @@ namespace IT3047C_FinalProject.Controllers
         public IActionResult SharedHobbies()
         {
             ViewBag.Name = "temp";
-            return View("~/Views/SharedHobbies/Index.cshtml");
+            return View("~/Views/Hobbies/ViewStart.cshtml");
         }
     }
 }

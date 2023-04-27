@@ -1,13 +1,13 @@
-﻿@model IEnumerable<Dakota>
+﻿@model IEnumerable<Chloe>
 
 @{
-     ViewData["Title"] = "Dakota's Hobbies";
+    ViewData["Title"] = "Chloe's Hobbies";
 }
 
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Dakota's Hobbies' </title>
+        <title> @ViewData </title>
     </head>
     <body>
         <h1 class="display-4"> Favorite Hobbies</h1>
@@ -17,7 +17,7 @@
             <tr><th>Hobby Name</th><th>Favorite Types of Hobby</th></tr>
         </thead>
         <tbody>
-            @foreach (Dakota c! in Model)
+            @foreach (Chloe c in Model)
             {
                 <tr>
                     <td>@c.HobbyName</td>
@@ -27,23 +27,24 @@
         </tbody>
     </table>
 
-    <h3><b></b>Hiking</h3>
-    <p> One of my favorite things to do when I get the time is to go on a short hike. I haven't went on long backpacking trips
-        yet, but the shorter few mile hikes through the woods are relaxing to me. I also enjoy some traditonal camping trips
-        with friends and family.
+    <h3><b>Crafting </b></h3>
+    <p> What I enjoy most about crafting is taking any kind of everyday household object and making art with it. As shown in the list, I
+        really enjoy journalling, scrapbooking, and knitting. I've only been journaling for a year, but I've been scrapbooking and knitting for
+        a few years now. My knitting skills haven't gone anywhere past knitting scarfs, but it's still a growing skill.
     </p>
 
-    <h3><br /><b>Swimming</b></h3>
-    <p> When I was in high school, I joined the swim team. At joined during my sophmore year and stoped after I graduated.
-        I would do some lap swimming every weekday after school with the rest of the team, and go to swim events for some
-        competition swimming. My favorite strokes were freestyle and breaststroke.
+    <h3><br /><b>Gaming </b></h3>
+    <p> Almost every season or school semester I find a new game to hyperfixate on. Growing up, I've always loved
+        playing computer games. Some of my favorite were the Mystery Case File hidden-object games or story-based games like
+        Legend of Zelda or Kingdom Hearts.
     </p>
 
-    <h3><br /><b></b>Fishing</h3>
+    <h3><br /><b>Reading </b></h3>
     <p>
-        Along with the usual outdoor activities, I also enjoy a relaxing fishing trip. I haven't done anything other than
-        rod fishing though. I would go over to my grandparents' river whenever I visted as a kid, and I still enjoy going out
-        to a pond for a relaxing evening. '
+        It's been awhile since I last picked up a good book, but I've been trying to make more time to do some reading.
+        Some of my favorite genres of books are thriller novels, slice of life, and fantasy. Most of what I read now is Young Adult
+        Fiction, but my reading list has grown to have some nonfiction books in there are well. One of my most favorite recent reads was
+        'Tess of the Road' by Rachel Hartman. I would highly recommend it for fantasy lovers. 
     </p>
     </body>
 </html>
